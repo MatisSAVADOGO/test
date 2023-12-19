@@ -1,0 +1,403 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Microsoft.Extensions.Logging.Abstractions/7.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets": {}
+        }
+      },
+      "MySqlConnector/2.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
+        },
+        "compile": {
+          "lib/net7.0/MySqlConnector.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/MySqlConnector.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Licensing/23.1.41": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/23.1.41": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "23.1.41"
+        },
+        "compile": {
+          "lib/net7.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/23.1.41": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "23.1.41"
+        },
+        "compile": {
+          "lib/net7.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
+      "Feur_MaColoc_Metier/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "MySqlConnector": "2.3.1",
+          "Syncfusion.Maui.Scheduler": "23.1.41"
+        },
+        "compile": {
+          "bin/placeholder/Feur_MaColoc_Metier.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Feur_MaColoc_Metier.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Extensions.Logging.Abstractions/7.0.1": {
+      "sha512": "pkeBFx0vqMW/A3aUVHh7MPu3WkBhaVlezhSZeb1c9XD0vUReYH1TLFSy5MxJgZfmz5LZzYoErMorlYZiwpOoNA==",
+      "type": "package",
+      "path": "microsoft.extensions.logging.abstractions/7.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/roslyn3.11/cs/Microsoft.Extensions.Logging.Generators.dll",
+        "analyzers/dotnet/roslyn3.11/cs/cs/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/de/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/es/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/fr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/it/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ja/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ko/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pl/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pt-BR/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ru/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/tr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hans/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hant/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/Microsoft.Extensions.Logging.Generators.dll",
+        "analyzers/dotnet/roslyn4.0/cs/cs/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/de/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/es/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/fr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/it/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ja/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ko/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pl/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pt-BR/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ru/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/tr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hans/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hant/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/Microsoft.Extensions.Logging.Generators.dll",
+        "analyzers/dotnet/roslyn4.4/cs/cs/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/de/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/es/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/fr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/it/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ja/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ko/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/pl/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/pt-BR/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ru/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/tr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/zh-Hans/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/zh-Hant/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "buildTransitive/net461/Microsoft.Extensions.Logging.Abstractions.targets",
+        "buildTransitive/net462/Microsoft.Extensions.Logging.Abstractions.targets",
+        "buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Logging.Abstractions.targets",
+        "buildTransitive/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.Logging.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "lib/net7.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net7.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "MySqlConnector/2.3.1": {
+      "sha512": "FYTnvNBbNSZotSWUerK22Ztsc3vx3wBRZ4veavkUbfCBNthtCr3CH5Wpoo4l5gBD2TmQD9JbL33Gf9kWko1yYw==",
+      "type": "package",
+      "path": "mysqlconnector/2.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/MySqlConnector.dll",
+        "lib/net462/MySqlConnector.xml",
+        "lib/net471/MySqlConnector.dll",
+        "lib/net471/MySqlConnector.xml",
+        "lib/net48/MySqlConnector.dll",
+        "lib/net48/MySqlConnector.xml",
+        "lib/net6.0/MySqlConnector.dll",
+        "lib/net6.0/MySqlConnector.xml",
+        "lib/net7.0/MySqlConnector.dll",
+        "lib/net7.0/MySqlConnector.xml",
+        "lib/net8.0/MySqlConnector.dll",
+        "lib/net8.0/MySqlConnector.xml",
+        "lib/netstandard2.0/MySqlConnector.dll",
+        "lib/netstandard2.0/MySqlConnector.xml",
+        "lib/netstandard2.1/MySqlConnector.dll",
+        "lib/netstandard2.1/MySqlConnector.xml",
+        "logo.png",
+        "mysqlconnector.2.3.1.nupkg.sha512",
+        "mysqlconnector.nuspec"
+      ]
+    },
+    "Syncfusion.Licensing/23.1.41": {
+      "sha512": "BNHibjFgz/E1c8Gd88/L7NPBCM1PbxchPm1OUdpauaZ+nV+Bkma0V2/ANw4MkUWaaO5SORBdF+hmOBfAcwKWSA==",
+      "type": "package",
+      "path": "syncfusion.licensing/23.1.41",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/MonoAndroid90/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net451/Syncfusion.Licensing.dll",
+        "lib/net46/Syncfusion.Licensing.dll",
+        "lib/net6.0/Syncfusion.Licensing.dll",
+        "lib/net7.0/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.23.1.41.nupkg.sha512",
+        "syncfusion.licensing.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Maui.Core/23.1.41": {
+      "sha512": "gj4yFgxbjUvcVqb3EEwladlixIj0dUFPM7worXyeRIIQgCAK5v03UC+fc1yzrZkMY5hzeQbqbs0rIjM4+qXamA==",
+      "type": "package",
+      "path": "syncfusion.maui.core/23.1.41",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net6.0-android30.0/Syncfusion.Maui.Core.dll",
+        "lib/net6.0-android30.0/Syncfusion.Maui.Core.xml",
+        "lib/net6.0-ios13.6/Syncfusion.Maui.Core.dll",
+        "lib/net6.0-ios13.6/Syncfusion.Maui.Core.xml",
+        "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Core.dll",
+        "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Core.xml",
+        "lib/net6.0-windows10.0.19041.0/Syncfusion.Maui.Core.deps.json",
+        "lib/net6.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll",
+        "lib/net6.0-windows10.0.19041.0/Syncfusion.Maui.Core.xml",
+        "lib/net6.0/Syncfusion.Maui.Core.deps.json",
+        "lib/net6.0/Syncfusion.Maui.Core.dll",
+        "lib/net6.0/Syncfusion.Maui.Core.xml",
+        "lib/net7.0-android30.0/Syncfusion.Maui.Core.aar",
+        "lib/net7.0-android30.0/Syncfusion.Maui.Core.dll",
+        "lib/net7.0-android30.0/Syncfusion.Maui.Core.xml",
+        "lib/net7.0-ios13.6/Syncfusion.Maui.Core.dll",
+        "lib/net7.0-ios13.6/Syncfusion.Maui.Core.xml",
+        "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.Core.dll",
+        "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.Core.xml",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core.deps.json",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core.xml",
+        "lib/net7.0/Syncfusion.Maui.Core.deps.json",
+        "lib/net7.0/Syncfusion.Maui.Core.dll",
+        "lib/net7.0/Syncfusion.Maui.Core.xml",
+        "syncfusion.maui.core.23.1.41.nupkg.sha512",
+        "syncfusion.maui.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Maui.Scheduler/23.1.41": {
+      "sha512": "oVswQwYScJpwoIKnL+24MR0qvwwiGTJjpFKkySPxe12sNxYqcCZwLgR+6/XovaVD6WxiM5bEcukiG/ZY7lduow==",
+      "type": "package",
+      "path": "syncfusion.maui.scheduler/23.1.41",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net6.0-android30.0/Syncfusion.Maui.Scheduler.dll",
+        "lib/net6.0-android30.0/Syncfusion.Maui.Scheduler.xml",
+        "lib/net6.0-android30.0/en-US/Syncfusion.Maui.Scheduler.resources.dll",
+        "lib/net6.0-ios13.6/Syncfusion.Maui.Scheduler.dll",
+        "lib/net6.0-ios13.6/Syncfusion.Maui.Scheduler.xml",
+        "lib/net6.0-ios13.6/en-US/Syncfusion.Maui.Scheduler.resources.dll",
+        "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Scheduler.dll",
+        "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Scheduler.xml",
+        "lib/net6.0-maccatalyst13.5/en-US/Syncfusion.Maui.Scheduler.resources.dll",
+        "lib/net6.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.deps.json",
+        "lib/net6.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll",
+        "lib/net6.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.xml",
+        "lib/net6.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Scheduler.resources.dll",
+        "lib/net6.0/Syncfusion.Maui.Scheduler.deps.json",
+        "lib/net6.0/Syncfusion.Maui.Scheduler.dll",
+        "lib/net6.0/Syncfusion.Maui.Scheduler.xml",
+        "lib/net6.0/en-US/Syncfusion.Maui.Scheduler.resources.dll",
+        "lib/net7.0-android30.0/Syncfusion.Maui.Scheduler.aar",
+        "lib/net7.0-android30.0/Syncfusion.Maui.Scheduler.dll",
+        "lib/net7.0-android30.0/Syncfusion.Maui.Scheduler.xml",
+        "lib/net7.0-android30.0/en-US/Syncfusion.Maui.Scheduler.resources.dll",
+        "lib/net7.0-ios13.6/Syncfusion.Maui.Scheduler.dll",
+        "lib/net7.0-ios13.6/Syncfusion.Maui.Scheduler.xml",
+        "lib/net7.0-ios13.6/en-US/Syncfusion.Maui.Scheduler.resources.dll",
+        "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.Scheduler.dll",
+        "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.Scheduler.xml",
+        "lib/net7.0-maccatalyst13.5/en-US/Syncfusion.Maui.Scheduler.resources.dll",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.deps.json",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.xml",
+        "lib/net7.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Scheduler.resources.dll",
+        "lib/net7.0/Syncfusion.Maui.Scheduler.deps.json",
+        "lib/net7.0/Syncfusion.Maui.Scheduler.dll",
+        "lib/net7.0/Syncfusion.Maui.Scheduler.xml",
+        "lib/net7.0/en-US/Syncfusion.Maui.Scheduler.resources.dll",
+        "syncfusion.maui.scheduler.23.1.41.nupkg.sha512",
+        "syncfusion.maui.scheduler.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Feur_MaColoc_Metier/1.0.0": {
+      "type": "project",
+      "path": "../Feur_MaColoc_Metier/Feur_MaColoc_Metier.csproj",
+      "msbuildProject": "../Feur_MaColoc_Metier/Feur_MaColoc_Metier.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Feur_MaColoc_Metier >= 1.0.0",
+      "MySqlConnector >= 2.3.1",
+      "Syncfusion.Maui.Scheduler >= 23.1.41"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\savad\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\savad\\Documents\\GitHub\\SAE\\Feur_MaColoc\\Feur_MaColoc_Data\\Feur_MaColoc_Data.csproj",
+      "projectName": "Feur_MaColoc_Data",
+      "projectPath": "C:\\Users\\savad\\Documents\\GitHub\\SAE\\Feur_MaColoc\\Feur_MaColoc_Data\\Feur_MaColoc_Data.csproj",
+      "packagesPath": "C:\\Users\\savad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\savad\\Documents\\GitHub\\SAE\\Feur_MaColoc\\Feur_MaColoc_Data\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\savad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "C:\\Users\\savad\\Documents\\GitHub\\SAE\\Feur_MaColoc\\Feur_MaColoc_Metier\\Feur_MaColoc_Metier.csproj": {
+              "projectPath": "C:\\Users\\savad\\Documents\\GitHub\\SAE\\Feur_MaColoc\\Feur_MaColoc_Metier\\Feur_MaColoc_Metier.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "dependencies": {
+          "MySqlConnector": {
+            "target": "Package",
+            "version": "[2.3.1, )"
+          },
+          "Syncfusion.Maui.Scheduler": {
+            "target": "Package",
+            "version": "[23.1.41, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

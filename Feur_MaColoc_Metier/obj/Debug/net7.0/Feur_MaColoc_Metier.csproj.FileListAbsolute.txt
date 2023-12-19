@@ -1,0 +1,12 @@
+C:\Users\savad\Documents\GitHub\SAE\Feur_MaColoc\Feur_MaColoc_Metier\bin\Debug\net7.0\Feur_MaColoc_Metier.deps.json
+C:\Users\savad\Documents\GitHub\SAE\Feur_MaColoc\Feur_MaColoc_Metier\bin\Debug\net7.0\Feur_MaColoc_Metier.dll
+C:\Users\savad\Documents\GitHub\SAE\Feur_MaColoc\Feur_MaColoc_Metier\bin\Debug\net7.0\Feur_MaColoc_Metier.pdb
+C:\Users\savad\Documents\GitHub\SAE\Feur_MaColoc\Feur_MaColoc_Metier\obj\Debug\net7.0\Feur_MaColoc_Metier.csproj.AssemblyReference.cache
+C:\Users\savad\Documents\GitHub\SAE\Feur_MaColoc\Feur_MaColoc_Metier\obj\Debug\net7.0\Feur_MaColoc_Metier.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\savad\Documents\GitHub\SAE\Feur_MaColoc\Feur_MaColoc_Metier\obj\Debug\net7.0\Feur_MaColoc_Metier.AssemblyInfoInputs.cache
+C:\Users\savad\Documents\GitHub\SAE\Feur_MaColoc\Feur_MaColoc_Metier\obj\Debug\net7.0\Feur_MaColoc_Metier.AssemblyInfo.cs
+C:\Users\savad\Documents\GitHub\SAE\Feur_MaColoc\Feur_MaColoc_Metier\obj\Debug\net7.0\Feur_MaColoc_Metier.csproj.CoreCompileInputs.cache
+C:\Users\savad\Documents\GitHub\SAE\Feur_MaColoc\Feur_MaColoc_Metier\obj\Debug\net7.0\Feur_MaColoc_Metier.dll
+C:\Users\savad\Documents\GitHub\SAE\Feur_MaColoc\Feur_MaColoc_Metier\obj\Debug\net7.0\refint\Feur_MaColoc_Metier.dll
+C:\Users\savad\Documents\GitHub\SAE\Feur_MaColoc\Feur_MaColoc_Metier\obj\Debug\net7.0\Feur_MaColoc_Metier.pdb
+C:\Users\savad\Documents\GitHub\SAE\Feur_MaColoc\Feur_MaColoc_Metier\obj\Debug\net7.0\ref\Feur_MaColoc_Metier.dll

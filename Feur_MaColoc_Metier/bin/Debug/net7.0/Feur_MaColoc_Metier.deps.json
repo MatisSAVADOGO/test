@@ -1,0 +1,116 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Feur_MaColoc_Metier/1.0.0": {
+        "dependencies": {
+          "MySqlConnector": "2.3.1",
+          "Syncfusion.Maui.Scheduler": "23.1.41"
+        },
+        "runtime": {
+          "Feur_MaColoc_Metier.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/7.0.1": {
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.723.27404"
+          }
+        }
+      },
+      "MySqlConnector/2.3.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
+        },
+        "runtime": {
+          "lib/net7.0/MySqlConnector.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.3.1.0"
+          }
+        }
+      },
+      "Syncfusion.Licensing/23.1.41": {
+        "runtime": {
+          "lib/net7.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "23.1.41.0",
+            "fileVersion": "23.1.41.0"
+          }
+        }
+      },
+      "Syncfusion.Maui.Core/23.1.41": {
+        "dependencies": {
+          "Syncfusion.Licensing": "23.1.41"
+        },
+        "runtime": {
+          "lib/net7.0/Syncfusion.Maui.Core.dll": {
+            "assemblyVersion": "23.1.41.0",
+            "fileVersion": "23.1.41.0"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/23.1.41": {
+        "dependencies": {
+          "Syncfusion.Maui.Core": "23.1.41"
+        },
+        "runtime": {
+          "lib/net7.0/Syncfusion.Maui.Scheduler.dll": {
+            "assemblyVersion": "23.1.41.0",
+            "fileVersion": "23.1.41.0"
+          }
+        },
+        "resources": {
+          "lib/net7.0/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Feur_MaColoc_Metier/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Logging.Abstractions/7.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pkeBFx0vqMW/A3aUVHh7MPu3WkBhaVlezhSZeb1c9XD0vUReYH1TLFSy5MxJgZfmz5LZzYoErMorlYZiwpOoNA==",
+      "path": "microsoft.extensions.logging.abstractions/7.0.1",
+      "hashPath": "microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512"
+    },
+    "MySqlConnector/2.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FYTnvNBbNSZotSWUerK22Ztsc3vx3wBRZ4veavkUbfCBNthtCr3CH5Wpoo4l5gBD2TmQD9JbL33Gf9kWko1yYw==",
+      "path": "mysqlconnector/2.3.1",
+      "hashPath": "mysqlconnector.2.3.1.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/23.1.41": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BNHibjFgz/E1c8Gd88/L7NPBCM1PbxchPm1OUdpauaZ+nV+Bkma0V2/ANw4MkUWaaO5SORBdF+hmOBfAcwKWSA==",
+      "path": "syncfusion.licensing/23.1.41",
+      "hashPath": "syncfusion.licensing.23.1.41.nupkg.sha512"
+    },
+    "Syncfusion.Maui.Core/23.1.41": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gj4yFgxbjUvcVqb3EEwladlixIj0dUFPM7worXyeRIIQgCAK5v03UC+fc1yzrZkMY5hzeQbqbs0rIjM4+qXamA==",
+      "path": "syncfusion.maui.core/23.1.41",
+      "hashPath": "syncfusion.maui.core.23.1.41.nupkg.sha512"
+    },
+    "Syncfusion.Maui.Scheduler/23.1.41": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oVswQwYScJpwoIKnL+24MR0qvwwiGTJjpFKkySPxe12sNxYqcCZwLgR+6/XovaVD6WxiM5bEcukiG/ZY7lduow==",
+      "path": "syncfusion.maui.scheduler/23.1.41",
+      "hashPath": "syncfusion.maui.scheduler.23.1.41.nupkg.sha512"
+    }
+  }
+}

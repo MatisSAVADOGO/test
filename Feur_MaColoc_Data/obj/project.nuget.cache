@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "jm5Hg+Cwr8vn7aWhOG9fpleQg6QWutIeUnPiHBZVki8YX+zWDtwkY3Md9/H0wPYaAvi96JoyowHeh3HqjDKt0Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\savad\\Documents\\GitHub\\SAE\\Feur_MaColoc\\Feur_MaColoc_Data\\Feur_MaColoc_Data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\savad\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "C:\\Users\\savad\\.nuget\\packages\\mysqlconnector\\2.3.1\\mysqlconnector.2.3.1.nupkg.sha512",
+    "C:\\Users\\savad\\.nuget\\packages\\syncfusion.licensing\\23.1.41\\syncfusion.licensing.23.1.41.nupkg.sha512",
+    "C:\\Users\\savad\\.nuget\\packages\\syncfusion.maui.core\\23.1.41\\syncfusion.maui.core.23.1.41.nupkg.sha512",
+    "C:\\Users\\savad\\.nuget\\packages\\syncfusion.maui.scheduler\\23.1.41\\syncfusion.maui.scheduler.23.1.41.nupkg.sha512"
+  ],
+  "logs": []
+}
