@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Feur_MaColoc.view.Admin.TaskCreationPage"
+             Title="Création de Tâche"
+             Shell.NavBarIsVisible="False">
+
+
+    <StackLayout>
+        <Grid x:Name="HeaderGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Margin="40,30,60,0" Grid.Row="0" Grid.Column="0" Text="&lt;" FontSize="25" FontAttributes="Bold" CornerRadius="30" TextColor="White" Clicked="RetourButton_Clicked" BorderColor="#3860B2" BackgroundColor="#3860B2" WidthRequest="60" HeightRequest="60"></Button>
+            <Label Grid.Row="1" Grid.Column="1"  Text="MA COLOC" FontFamily="OpenSans" FontAttributes="Bold" FontSize="30" HorizontalTextAlignment="Center" Margin="0,0,0,0"/>
+            <Label Grid.Row="2" Grid.Column="1"  Text="Création de tâche" FontFamily="OpenSans" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" Margin="0,0,0,30"/>
+        </Grid>
+
+        <VerticalStackLayout Padding="50">
+            <Grid x:Name="NomTacheGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Text="Nom de la tâche :" FontFamily="OpenSans" FontSize="16"></Label>
+                <Entry Grid.Column="1" x:Name="NameNewTaskEntry" BackgroundColor="White" TextChanged="EntryTaskName" Keyboard="Chat" Margin="0,0,0,30"></Entry>
+            </Grid>
+
+            <Grid x:Name="DureeTacheGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="Durée de la tâche : " FontFamily="OpenSans" FontSize="16"></Label>
+                <Entry Grid.Row="0" Grid.Column="1" x:Name="Duration" BackgroundColor="White"  TextChanged="OnEntryTextChanged" Keyboard="Numeric" MaxLength="3" Margin="0,0,0,50"></Entry>
+                <Label Grid.Row="0" Grid.Column="2" Text=" minutes" FontFamily="OpenSans" FontSize="16" ></Label>
+
+                <Label Grid.Row="1" Grid.Column="0" Text="Répétition de la tâche :" FontFamily="OpenSans" FontSize="16"></Label>
+                <Picker Grid.Row="1" Grid.Column="1" x:Name="RepetitionPicker" SelectedIndexChanged="RepetitionPicker_SelectedIndexChanged" BackgroundColor="white">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Journalier</x:String>
+                            <x:String>Hebdomadaire</x:String>
+                            <x:String>Mensuel</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </Grid>
+
+            <Button Text="Ajouter une tâche" Clicked="Button_Clicked" BackgroundColor="#3860B2" Margin="20"></Button>
+            
+
+        </VerticalStackLayout>
+        
+        
+    </StackLayout>
+</ContentPage>

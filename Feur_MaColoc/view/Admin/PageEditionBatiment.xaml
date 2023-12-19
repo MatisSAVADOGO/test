@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Feur_MaColoc.view.Admin.PageEditionBatiment"
+             Title="PageEditionBatiment"
+             Shell.NavBarIsVisible="False">
+    <VerticalStackLayout x:Name="FinalView">
+        <Grid x:Name="xamlGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button Margin="40,30,60,0" Grid.Row="0" Grid.Column="0" Text="&lt;" FontSize="25" FontAttributes="Bold" CornerRadius="30" TextColor="White" Clicked="RetourButton_Clicked" BorderColor="#3860B2" BackgroundColor="#3860B2" WidthRequest="60" HeightRequest="60"></Button>
+
+            <Label Grid.Row="1" Grid.Column="1"  Text="MA COLOC" FontFamily="OpenSans" FontAttributes="Bold" FontSize="30" HorizontalTextAlignment="Center" />
+            <Label Grid.Row="2" Grid.Column="1"  Text="Mes bâtiments" FontFamily="OpenSans" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center"/>
+
+            <!--   <Button Grid.Row="0" Grid.Column="3" BackgroundColor="#3860B2" Text="Home"></Button>     futur bouton home     -->
+        </Grid>
+
+        <Frame x:Name="FrameOfAllEntry" BorderColor="#335290"  BackgroundColor="#f1f4f9" VerticalOptions="CenterAndExpand" >
+            <StackLayout>
+                <Frame BorderColor="#335290"  BackgroundColor="#f1f4f9">
+                    <Label x:Name="BatimentModifier" FontFamily="OpenSans" FontSize="16" HorizontalOptions="Center" ></Label>
+                </Frame>
+
+                <Entry x:Name="Nom" Placeholder="Nom du bâtiment" BackgroundColor="white"  MaxLength="20"></Entry>
+                <Entry x:Name="Adress" Placeholder="Adresse" BackgroundColor="white"   MaxLength="50"></Entry>
+                <Entry x:Name="CodePostal" Placeholder="Code postale" BackgroundColor="white" Keyboard="Numeric"  MaxLength="5"></Entry>
+                <Entry x:Name="Ville" Placeholder="Ville" BackgroundColor="white"  MaxLength="30"></Entry>
+                <Entry x:Name="Surface" Placeholder="Surface (en mètres carrés)" BackgroundColor="White"  Keyboard="Numeric" MaxLength="4"></Entry>
+               
+
+                <Grid x:Name="gridd">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition Width="200"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="1" x:Name="ListPieceLabel" Text="Liste des pièces" FontSize="20" HorizontalOptions="Center" Margin="10"></Label>
+                    <Button x:Name="ButtonAddPiece" Text="+" BackgroundColor="#3860B2" FontSize="15" Grid.Column="2" Grid.Row="0" HorizontalOptions="Start" Clicked="ButtonAddPiece_Clicked" ></Button>
+                </Grid>
+                
+                <Button Clicked="ModifBatiment_Clicked" Text="Sauvegarder les modifications" BackgroundColor="#3860B2" TextColor="White" Margin="20,0,20,0"></Button>
+            </StackLayout>
+        </Frame>
+
+    </VerticalStackLayout>
+</ContentPage>

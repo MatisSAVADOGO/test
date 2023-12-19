@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Feur_MaColoc.view.PageInscription"
+             Shell.NavBarIsVisible="False">
+
+
+
+    <StackLayout >
+
+        <Grid x:Name="xamlGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+            <Button Margin="40,30,60,0" Grid.Row="0" Grid.Column="0" Text="&lt;" FontSize="25" FontAttributes="Bold" CornerRadius="30" TextColor="White" Clicked="RetourButton_Clicked" BorderColor="#3860B2" BackgroundColor="#3860B2" WidthRequest="60" HeightRequest="60"></Button>
+                <Label Grid.Row="1" Grid.Column="1"  Text="MA COLOC" FontFamily="OpenSans" FontAttributes="Bold" FontSize="30" HorizontalTextAlignment="Center"/>
+            <Label Grid.Row="2" Grid.Column="1"  Text="Inscription" FontFamily="OpenSans" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" Margin="0,0,0,30"/>
+        </Grid>
+
+        <VerticalStackLayout Padding="70">
+
+        <Entry x:Name="NomComplet" Placeholder="Nom complet" HorizontalOptions="FillAndExpand" MaxLength="45" TextColor="Black" BackgroundColor="white" Margin="10"/>
+        <Entry x:Name="Login" Placeholder="Login" HorizontalOptions="FillAndExpand" MaxLength="35" TextColor="Black" BackgroundColor="white" Margin="10" />
+        <Entry x:Name="Mail" Placeholder="Adresse e-mail" HorizontalOptions="FillAndExpand" MaxLength="45" TextColor="Black" BackgroundColor="white" Margin="10"/>
+        <Entry x:Name="Password" Placeholder="Mot de passe" IsPassword="True" HorizontalOptions="FillAndExpand" MaxLength="55" TextColor="Black" BackgroundColor="white" Margin="10"/>
+        <Entry x:Name="PasswordConfirmation" Placeholder="Confirmer le mot de passe" IsPassword="True" HorizontalOptions="FillAndExpand" MaxLength="55" TextColor="Black" BackgroundColor="white" Margin="10"/>
+        <Button Text="S'inscrire" HorizontalOptions="Center" FontSize="15" Margin="20" BackgroundColor="#3860B2" Clicked="OnRegisterClicked"/>
+
+        </VerticalStackLayout>
+
+    </StackLayout>
+
+
+
+</ContentPage>

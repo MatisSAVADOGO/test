@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Feur_MaColoc.view.Admin.PageEditionPiece"
+             Title="PageEditionPiece"
+             Shell.NavBarIsVisible="False">
+    <VerticalStackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="1" Grid.Column="1"  Text="MA COLOC" FontFamily="OpenSans" FontAttributes="Bold" FontSize="30" HorizontalTextAlignment="Center" />
+            <Label Grid.Row="2" Grid.Column="1"  Text="Modifier une pièce" FontFamily="OpenSans" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center"/>
+        </Grid>
+
+        <Frame BorderColor="#335290" Padding="15" Margin="25" BackgroundColor="#f1f4f9" VerticalOptions="CenterAndExpand" >
+            <StackLayout x:Name="stackLayout">
+                <Frame BorderColor="#335290" Padding="15" BackgroundColor="#f1f4f9">
+                    <Label  Text="Modifier une pièce" FontFamily="OpenSans" FontSize="16" HorizontalOptions="Center" ></Label>
+                </Frame>
+                <Entry x:Name="TypePiece" IsReadOnly="true"/>
+                <Entry x:Name="NomPiece" Placeholder="Nom de la pièce" BackgroundColor="White" Margin="10"></Entry>
+                <Entry x:Name="Surface" Placeholder="Surface (en mètres carrés)" BackgroundColor="White" Margin="10" Keyboard="Numeric" MaxLength="4"></Entry>
+                <StackLayout Orientation="Horizontal" Margin="10" x:Name="CocheIsPublic">
+                    <Label Text="Partagée"></Label>
+                    <RadioButton x:Name="PartageeRadioButton"  IsChecked="True"/>
+                    <Label Text="Non partagée"></Label>
+                    <RadioButton x:Name="NonPartageeRadioButton"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Feur_MaColoc.view.Admin.PageAccueilAdmin"
+             Shell.NavBarIsVisible="False">
+
+    <StackLayout >
+        <Grid x:Name="DeconnexionGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Margin="30" Grid.Column="2" Text="Déconnexion" FontSize="15" FontAttributes="Bold" CornerRadius="30" TextColor="White" Clicked="RetourButton_Clicked" BorderColor="#3860B2" BackgroundColor="#3860B2"></Button>
+        </Grid>
+        <Grid x:Name="TitleGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="1" Grid.Column="1"  Text="MA COLOC" FontFamily="OpenSans" FontAttributes="Bold" FontSize="30" HorizontalTextAlignment="Center"/>
+            <Label Grid.Row="2" Grid.Column="1"  Text="Accueil Administrateur" FontFamily="OpenSans" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" Margin="0,0,0,0"/>
+        </Grid>
+
+        <VerticalStackLayout Padding="50">
+
+            <Button Text="Mes locataires" Clicked="ListUsersButton_Clicked" FontFamily="OpenSans" FontSize="16" TextColor="Black" BorderWidth="1" BorderColor="Black" BackgroundColor="white" Margin="20"></Button>
+            <Button Text="Mes bâtiments" Clicked="MesBatiments_Clicked" FontFamily="OpenSans" FontSize="16" TextColor="Black" BorderWidth="1" BorderColor="Black" BackgroundColor="white" Margin="20"></Button>
+            <Button Text="Mes tâches" Clicked="MesTaches_Clicked" FontFamily="OpenSans" FontSize="16" TextColor="Black" BorderWidth="1" BorderColor="Black" BackgroundColor="white" Margin="20"></Button>
+
+        </VerticalStackLayout>
+
+    </StackLayout>
+
+</ContentPage>

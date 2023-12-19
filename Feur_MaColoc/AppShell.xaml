@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Feur_MaColoc.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:view="clr-namespace:Feur_MaColoc.view"
+    xmlns:Admin="clr-namespace:Feur_MaColoc.view.Admin"
+    xmlns:Users="clr-namespace:Feur_MaColoc.view.Users"
+    Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent
+            ContentTemplate="{DataTemplate view:FirstPage}"
+            Route="FirstPage" />
+
+    <ShellContent
+            ContentTemplate="{DataTemplate view:PageConnexion}"
+            Route="PageConnexion" />
+
+    <ShellContent
+            ContentTemplate="{DataTemplate view:PageInscription}"
+            Route="PageInscription" />
+
+    <ShellContent
+            ContentTemplate="{DataTemplate Admin:PageAccueilAdmin}"
+            Route="PageAccueilAdmin" />
+
+    <ShellContent
+            ContentTemplate="{DataTemplate Users:PageAccueilUser}"
+            Route="PageAccueilUser" />
+    <ShellContent
+            ContentTemplate="{DataTemplate Users:PageAffichageTachesFinies}"
+            Route="PageAffichageTachesFinies" />
+    <ShellContent
+            ContentTemplate="{DataTemplate Admin:TaskCreationPage}"
+            Route="TaskCreationPage" />
+    
+    <ShellContent
+            ContentTemplate="{DataTemplate Admin:ListUsers}"
+            Route="ListUsers" />
+    <ShellContent
+        ContentTemplate="{DataTemplate Admin:PageGestionBatiments}"
+        Route="PageGestionBatiments" />
+    <ShellContent
+        ContentTemplate="{DataTemplate Admin:PageCreationBatiment}"
+        Route="PageCreationBatiment" />
+    <ShellContent
+        ContentTemplate="{DataTemplate Admin:PageEditionBatiment}"
+        Route="PageEditionBatiment" />
+    <ShellContent
+        ContentTemplate="{DataTemplate Admin:PageAjoutPiece}"
+        Route="PageAjoutPiece" />
+    <ShellContent
+        ContentTemplate="{DataTemplate Admin:PageAjoutPieceEdition}"
+        Route="PageAjoutPiece" />
+</Shell>

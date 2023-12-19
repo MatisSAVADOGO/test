@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Feur_MaColoc.view.Admin.PageCreationBatiment"
+             Title="PageCreationBatiment"
+             Shell.NavBarIsVisible="False">
+    <VerticalStackLayout x:Name="FinalView">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button Margin="40,30,60,0" Grid.Row="0" Grid.Column="0" Text="&lt;" FontSize="25" FontAttributes="Bold" CornerRadius="30" TextColor="White" Clicked="RetourButton_Clicked" BorderColor="#3860B2" BackgroundColor="#3860B2" WidthRequest="60" HeightRequest="60"></Button>
+
+            <Label Grid.Row="1" Grid.Column="1"  Text="MA COLOC" FontFamily="OpenSans" FontAttributes="Bold" FontSize="30" HorizontalTextAlignment="Center" />
+            <Label Grid.Row="2" Grid.Column="1"  Text="Mes bâtiments" FontFamily="OpenSans" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center"/>
+
+            <!--   <Button Grid.Row="0" Grid.Column="3" BackgroundColor="#3860B2" Text="Home"></Button>     futur bouton home     -->
+        </Grid>
+        
+            <Frame BorderColor="#335290" Padding="15" Margin="25" BackgroundColor="#f1f4f9" VerticalOptions="CenterAndExpand" >
+                <StackLayout>
+                    <Frame BorderColor="#335290" Padding="15" BackgroundColor="#f1f4f9">
+                    <Label  Text="Créer un bâtiment" FontFamily="OpenSans" FontSize="16" HorizontalOptions="Center" ></Label>
+                    </Frame>
+
+                    <Entry x:Name="Nom" Placeholder="Nom du bâtiment" BackgroundColor="white" Margin="10" MaxLength="20"></Entry>
+                <Entry x:Name="Adress" Placeholder="Adresse" BackgroundColor="white"  Margin="10" MaxLength="50"></Entry>
+                <Entry x:Name="CodePostal" Placeholder="Code postale" BackgroundColor="white" Keyboard="Numeric" Margin="10" MaxLength="5"></Entry>
+                <Entry x:Name="Ville" Placeholder="Ville" BackgroundColor="white" Margin="10" MaxLength="30"></Entry>
+                <Entry x:Name="Surface" Placeholder="Surface (en mètres carrés)" BackgroundColor="White" Margin="10" Keyboard="Numeric" MaxLength="4"></Entry>
+                <Grid x:Name="gridd">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition Width="200"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="1" x:Name="ListPieceLabel" Text="Liste des pièces" FontSize="20" HorizontalOptions="Center" Margin="10"></Label>
+
+                    <Button x:Name="ButtonAddPiece" Text="+" BackgroundColor="#3860B2" FontSize="15" Grid.Column="2" Grid.Row="0" HorizontalOptions="Start" Clicked="ButtonAddPiece_Clicked" ></Button>
+
+                    
+                </Grid>
+                <Grid x:Name="ListPieceGrid">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition Width="200"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+
+                    </Grid.ColumnDefinitions>
+                </Grid>
+                <Button x:Name="ButtonCreateBatiment" Text="Créer" Clicked="ButtonCreateBatiment_Clicked" BackgroundColor="#3860B2" CornerRadius="13"  Margin="20,10,20,0"></Button>
+                </StackLayout>
+            </Frame>
+        
+    </VerticalStackLayout>
+</ContentPage>
